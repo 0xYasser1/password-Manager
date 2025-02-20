@@ -20,7 +20,7 @@ def login():
     username = entry_username.get()
     password = entry_password.get()
 
-    if username == "admin" and password == "1":
+    if username == "admin" and password == "1": # change the ussername & password values 
         message_label.config(text="Login successful!", fg="green")
         root.after(200, open_password_manager)
     else:
@@ -32,7 +32,7 @@ def open_password_manager():
     root.destroy()
     ps.start_password_manager()
 
-# Main window setup
+
 root = tk.Tk()
 root.title("Login System")
 root.geometry("400x350")
